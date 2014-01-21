@@ -2,60 +2,460 @@
  * http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
  * Modified with h5bp.com/css
  */
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
-html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-body {}
-ol, ul {list-style: none;}
-blockquote, q {quotes: none;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
 /* remember to define focus styles! */
-:focus {outline: 0;}
+:focus {
+  outline: 0;
+}
+
 /* remember to highlight inserts somehow! */
-ins {text-decoration: none;}
-del {text-decoration: line-through;}
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
 /* tables still need 'cellspacing="0"' in the markup */
-table {border-collapse: collapse;border-spacing: 0;}
-td { vertical-align: top; }
-a {text-decoration: none;color:#000;}
-a:hover {text-decoration: underline;}
-a:focus {outline: 0;}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 0;
+}
+
 /* Improve readability of pre-formatted text in all browsers */
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-small { font-size: 85%; }
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+small {
+  font-size: 85%;
+}
+
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
 /* Improve image quality when scaled in IE7: h5bp.com/d & Remove the gap between images and borders on image containers: h5bp.com/e */
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-label { cursor: pointer; }
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+label {
+  cursor: pointer;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
 /* Remove inner padding and border in FF3/4: h5bp.com/l */
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
 /* Remove default vertical scrollbar in IE6/7/8/9 & Allow only vertical resizing */
-textarea { overflow: auto; vertical-align: top; resize: vertical; }
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
 /* HTML5 stuff */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
-[hidden] { display: none; }
-figure { margin: 0px; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+figure {
+  margin: 0px;
+}
 
 /* Micro-clearfix (http://nicolasgallagher.com/micro-clearfix-hack/) --------------------------------------- */
 /* For modern browsers */
-.cf:before, .cf:after {content:"";display:block;}
-.cf:after {clear:both;}
+.cf:before, .cf:after {
+  content: "";
+  display: block;
+}
+
+.cf:after {
+  clear: both;
+}
+
 /* For IE 6/7 (trigger hasLayout) */
-.cf {zoom:1;}
+.cf {
+  zoom: 1;
+}
 
 /* html5bp image replacement */
-.ir { background-color: transparent; border: 0; overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
 }
-.ir:before { content: ""; display: block; width: 0; height: 100%; }
 
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
 
+@font-face {
+  font-family: 'Bebas';
+  src: url("../fonts/bebas.eot");
+  src: url("../fonts/bebas.eot?#iefix") format("embedded-opentype"), url("../fonts/bebas.woff") format("woff"), url("../fonts/bebas.ttf") format("truetype"), url("../fonts/bebas.svg#bebasregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
 
-/* ==========================================================================
-   Your Styles
-   ========================================================================== */
+@font-face {
+  font-family: 'Karla';
+  src: url("../fonts/karla-regular-webfont.eot");
+  src: url("../fonts/karla-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/karla-regular-webfont.woff") format("woff"), url("../fonts/karla-regular-webfont.ttf") format("truetype"), url("../fonts/karla-regular-webfont.svg#karlaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url("../fonts/karla-bold-webfont.eot");
+  src: url("../fonts/karla-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/karla-bold-webfont.woff") format("woff"), url("../fonts/karla-bold-webfont.ttf") format("truetype"), url("../fonts/karla-bold-webfont.svg#karlabold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ====================================================
+    BASE STYLES
+
+    Base rules are the defaults. They are almost exclusively
+    single element selectors but it could include attribute selectors,
+    pseudo-class selectors, child selectors or sibling selectors.
+    Essentially, a base style says that wherever this element is on the page,
+    it should look like...
+==================================================== */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: always;
+}
+
+html {
+  font-size: 62.5%;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: Karla, Arial, sans-serif;
+  background-color: white;
+  color: #2f2f2f;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+[type=search] {
+  /* resets webkit styling on search inputs */
+  -webkit-appearance: none;
+}
+
+/* Style the webkit validation message for forms */
+::-webkit-validation-bubble-message {
+  padding: 40px;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #2f2f2f;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+a:hover {
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1.2em;
+}
+
+.wrapper {
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+}
+.wrapper:before, .wrapper:after {
+  content: '';
+  width: 50%;
+  height: 10px;
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.wrapper:before {
+  left: 0;
+  background-color: #c42f07;
+}
+.wrapper:after {
+  right: 0;
+  background-color: #286ac8;
+}
+
+.footer {
+  color: #c2c2c0;
+  padding: 100px 4% 200px;
+}
+.footer .inner {
+  max-width: 260px;
+  margin: auto;
+}
+
+.site-title {
+  font-family: Bebas, Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 40px;
+  font-size: 4rem;
+}
+
+.site-title--small {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.nav {
+  text-align: justify;
+  max-width: 400px;
+  margin: 4em auto 0;
+}
+.nav .nav-item {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  color: #494949;
+}
+.nav .nav-item:hover {
+  border-bottom: 2px solid #2f2f2f;
+  color: #2f2f2f;
+}
+.nav:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.section {
+  padding: 5em 4%;
+}
+.section.section--earth {
+  background-color: #ebece7;
+}
+.section.section--grey {
+  background-color: #c2c2c0;
+}
+
+.dots {
+  position: relative;
+  width: 1px;
+  height: 10px;
+  margin: 20px auto;
+  display: block;
+}
+.dots:before, .dots:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  display: block;
+  top: 0;
+  border-radius: 50%;
+}
+.dots:before {
+  left: -10px;
+  background-color: #c42f07;
+}
+.dots:after {
+  right: -10px;
+  background-color: #286ac8;
+}
+.dots.dots--large:after, .dots.dots--large:before {
+  width: 14px;
+  height: 14px;
+}
+.dots.dots--large:before {
+  left: -16px;
+}
+.dots.dots--large:after {
+  right: -16px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.cols {
+  overflow: auto;
+}
+.cols .col-1-2 {
+  width: 50%;
+  float: left;
+}
+.cols .col-1-3 {
+  width: 33.33%;
+  float: left;
+}
+.cols .col-1-4 {
+  width: 33.33%;
+  float: left;
+}
+
+.contain {
+  max-width: 13em;
+  margin: 2em auto;
+}
+
+/* ==|== print styles =======================================================
+    Print styles.
+    Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: .5cm;
+}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

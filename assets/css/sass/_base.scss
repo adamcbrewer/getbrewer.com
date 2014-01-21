@@ -34,9 +34,9 @@ body {
     font-family: $ff;
     background-color: $c-bg;
     color: $c-text;
-    @include font-size(1.4);
+    @include font-size(1.6);
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 ::-webkit-input-placeholder {}
@@ -51,21 +51,19 @@ body {
     padding: 40px;
 }
 
-a {}
-a:link {}
+a {
+    text-decoration: none;
+    border-bottom: 1px solid $c-black;
+    @include transition(0.2s ease all);
+}
 a:visited {}
-a:hover {}
+a:hover {
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
 a:active {}
 a:focus {}
 
-input:required {}
-input:optional {}
-input:valid {}
-input:invalid {}
-input:default {}
-input:focus {}
-
-input:enabled {}
-input:disabled {}
-input:checked {}
-input:indeterminate {} /* un-selected radio buttons :) */
+p {
+    margin-bottom: 1.2em;
+}

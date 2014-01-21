@@ -1,0 +1,78 @@
+.section {
+	padding: 5em 4%;
+
+	&.section--earth {
+		background-color: $c-earth;
+	}
+	&.section--grey {
+		background-color: $c-lightgrey;
+	}
+}
+
+.dots {
+	position: relative;
+	width: 1px;
+	height: 10px;
+	margin: 20px auto;
+	display: block;
+
+	&:before,
+    &:after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        display: block;
+        top: 0;
+        border-radius: 50%;
+    }
+    &:before {
+        left: -10px;
+        background-color: $c-red;
+    }
+    &:after {
+        right: -10px;
+        background-color: $c-blue;
+    }
+
+    &.dots--large {
+    	&:after,
+    	&:before {
+			width: 14px;
+			height: 14px;
+    	}
+    	&:before {
+    		left: -16px;
+    	}
+    	&:after {
+			right: -16px;
+    	}
+    }
+}
+
+.title {
+	text-transform: uppercase;
+	@include font-size(1.4);
+}
+
+.cols {
+	overflow: auto;
+
+	.col-1-2 {
+		width: 50%;
+		float: left;
+	}
+	.col-1-3 {
+		width: 33.33%;
+		float: left;
+	}
+	.col-1-4 {
+		width: 33.33%;
+		float: left;
+	}
+}
+
+.contain {
+	max-width: 13em;
+	margin: 2em auto;
+}
