@@ -17,14 +17,14 @@
 
     <meta name="description" content="The design and development practice of Jake and Adam Brewer. Brothers in a digital world.">
     <meta name="keywords" content="studiobrewer, brewerlogic, web design, web development, Jake Brewer, Adam Brewer, web development london, web design london">
+    <meta name="google-site-verification" content="Ml0cxuOA7IY2-6R6Ho_Dou43vMWHYHJxY2RG_EAHorY" />
 
-    <meta property="og:title" content=""/>
+    <meta property="og:title" content="Get Brewer"/>
     <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
+    <meta property="og:url" content="http://getbrewer.com"/>
+    <meta property="og:site_name" content="Get Brewer"/>
     <meta property="og:description" content="The design and development practice of Jake and Adam Brewer. Brothers in a digital world."/>
 
-    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
@@ -85,7 +85,7 @@
         // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        // ga('create', 'UA-XXXXXX-X');
+        // ga('create', 'UA-47362471-1', 'getbrewer.com');
         // ga('send', 'pageview');
     </script>
 
