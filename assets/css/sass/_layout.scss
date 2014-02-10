@@ -25,6 +25,7 @@
 .footer {
     color: $c-lightgrey;
     padding: 100px 4% 200px;
+    @include font-size(1.6);
     .inner {
         max-width: 260px;
         margin: auto;
@@ -36,10 +37,13 @@
     text-transform: uppercase;
     line-height: 1.2;
     font-weight: 400;
-    @include font-size(4);
+    @include font-size(8);
 }
 .site-title--small {
-    @include font-size(2);
+    @include font-size(3);
+}
+.strapline {
+    @include font-size(3);
 }
 
 .nav {
@@ -51,6 +55,7 @@
         display: inline-block;
         border-bottom: 2px solid transparent;
         color: lighten($c-black, 10%);
+        @include font-size(2.2);
 
         &:hover {
             border-bottom: 2px solid $c-black;
@@ -65,3 +70,21 @@
     }
 
 }
+.profile-pictures {
+    text-align: center;
+    margin-top: 2em;
+
+    .profile-pic {
+        max-width: 290px;
+        border: 10px solid #fff;
+        margin: 0 1.2em;
+    }
+    &.profile-pictures--small {
+        .profile-pic {
+            max-width: 160px;
+            border: none;
+            margin: 0 3em;
+        }
+    }
+}
+

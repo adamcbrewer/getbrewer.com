@@ -186,7 +186,7 @@ figure {
   font-family: 'Karla';
   src: url("../fonts/karla-regular-webfont.eot");
   src: url("../fonts/karla-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/karla-regular-webfont.woff") format("woff"), url("../fonts/karla-regular-webfont.ttf") format("truetype"), url("../fonts/karla-regular-webfont.svg#karlaregular") format("svg");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -194,7 +194,7 @@ figure {
   font-family: 'Karla';
   src: url("../fonts/karla-bold-webfont.eot");
   src: url("../fonts/karla-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/karla-bold-webfont.woff") format("woff"), url("../fonts/karla-bold-webfont.ttf") format("truetype"), url("../fonts/karla-bold-webfont.svg#karlabold") format("svg");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -228,8 +228,8 @@ body {
   font-family: Karla, Arial, sans-serif;
   background-color: white;
   color: #2f2f2f;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -285,6 +285,8 @@ p {
 .footer {
   color: #c2c2c0;
   padding: 100px 4% 200px;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 .footer .inner {
   max-width: 260px;
@@ -296,13 +298,18 @@ p {
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 400;
-  font-size: 40px;
-  font-size: 4rem;
+  font-size: 80px;
+  font-size: 8rem;
 }
 
 .site-title--small {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 30px;
+  font-size: 3rem;
+}
+
+.strapline {
+  font-size: 30px;
+  font-size: 3rem;
 }
 
 .nav {
@@ -314,6 +321,8 @@ p {
   display: inline-block;
   border-bottom: 2px solid transparent;
   color: #494949;
+  font-size: 22px;
+  font-size: 2.2rem;
 }
 .nav .nav-item:hover {
   border-bottom: 2px solid #2f2f2f;
@@ -325,6 +334,33 @@ p {
   width: 100%;
 }
 
+.profile-pictures {
+  text-align: center;
+  margin-top: 2em;
+}
+.profile-pictures .profile-pic {
+  max-width: 290px;
+  border: 10px solid #fff;
+  margin: 0 1.2em;
+}
+.profile-pictures.profile-pictures--small .profile-pic {
+  max-width: 160px;
+  border: none;
+  margin: 0 3em;
+}
+
+.ri > img {
+  max-width: 100%;
+}
+
+.color-blue {
+  color: #286ac8;
+}
+
+.color-red {
+  color: #c42f07;
+}
+
 .section {
   padding: 5em 4%;
 }
@@ -333,6 +369,9 @@ p {
 }
 .section.section--grey {
   background-color: #c2c2c0;
+}
+.section.section--border-top {
+  border-top: 1px solid #c2c2c0;
 }
 
 .dots {
@@ -378,6 +417,8 @@ p {
 
 .cols {
   overflow: auto;
+  max-width: 40em;
+  margin: auto;
 }
 .cols .col-1-2 {
   width: 50%;
@@ -395,6 +436,26 @@ p {
 .contain {
   max-width: 13em;
   margin: 2em auto;
+}
+.contain.contain--large {
+  max-width: 24em;
+}
+
+.profile-pic {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-title {
+  margin: 1em auto 2em;
+}
+
+.separator {
+  border-top: 1px solid #c2c2c0;
+  width: 300px;
+  max-width: 90%;
+  margin: 4em auto 1em;
 }
 
 /* ==|== print styles =======================================================
