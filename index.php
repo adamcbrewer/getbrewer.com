@@ -1,6 +1,6 @@
 <!doctype html>
 <!--[if IE 8]><html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
@@ -28,18 +28,26 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
-<body data-base-url="">
+<body data-base-url="" id="home">
 
     <div class="wrapper">
+
+        <nav class="nav">
+            <a class="nav-home js-smoothscroll icon-home" href="#home"></a>
+            <a class="nav-item js-smoothscroll" href="#what-we-do">What We Do</a>
+            <a class="nav-item js-smoothscroll" href="#projects">Projects</a>
+            <a class="nav-item js-smoothscroll" href="#contact">Contact</a>
+        </nav>
 
         <section class="content">
 
             <header class="section">
+                <div class="header-bg"></div>
                 <h1 class="site-title">
                     <span class="site-title--small">Get</span><br>
                     Brewer
                 </h1>
-                <i class="dots dots--large"></i>
+                <i class="dots dots--large dots--white"></i>
 
                 <div class="profile-pictures">
                     <figure class="ri profile-pic">
@@ -50,33 +58,29 @@
                     </figure>
                 </div>
 
-                <h2 class="strapline contain">The design and development practice of Jake and Adam Brewer. Brothers in a digital world.</h2>
-
-                <nav class="nav">
-                    <a class="nav-item" href="#what-we-do">What We Do</a>
-                    <a class="nav-item" href="#projects">Projects</a>
-                    <a class="nav-item" href="#contact">Contact</a>
-                </nav>
+                <h2 class="strapline contain">The design and development partnership of Jake and Adam Brewer. Brothers, in a digital world.</h2>
 
             </header>
 
-            <article id="what-we-do" class="section section--earth">
+            <article id="what-we-do" class="section section--earth section--whatwedo">
                 <article>
                     <header>
                         <h3 class="title">What We Do</h3>
                         <i class="dots"></i>
                     </header>
-                    <p class="contain contain--large">
-                        Separately, Jake and Adam work on a freelance basis for advertising, digital and creative agencies — including individuals — in and around London. <br>
+                    <p class="contain contain--large text-left">
+                        Apart, Jake and Adam work on a freelance basis for
+                        advertising and creative agencies — including individual
+                        clients — in and around London. <br>
                         <br>
-                        Together, they combine their skills and brotherly affection in a complete package, offering clients a high-quality online presence. <br>
-                        <br>
-                        From research, user experience and prototyping, through to design, build and deployment, we remain dedicated to creating the best possible experience &mdash; from desktop browsers to mobile devices &mdash; with meticulous attention to detail and ever-increasing performance.
+                        Together, they combine their skills, extensive experience and
+                        brotherly affection in a complete package, offering clients
+                        a high-quality online presence, from desktop to mobile. <br>
                     </p>
                 </article>
             </article>
 
-            <section id="profiles" class="section section--earth section--border-top">
+            <section id="profiles" class="section section--earth section--profiles">
                 <div class="cols profile-pictures profile-pictures--small">
                     <div class="col-1-2">
                         <header>
@@ -85,7 +89,7 @@
                             </figure>
                             <h4 class="color-red profile-title">Jake</h4>
                         </header>
-                        <p class="contain">
+                        <p class="contain text-left">
                             The Graphic &amp; Digital Designer,
                             Art Director and Illustrator with over nine years of experience across a wide range of creative fields, digital media and
                             client industries. <br>
@@ -101,7 +105,7 @@
                             </figure>
                             <h4 class="color-blue profile-title">Adam</h4>
                         </header>
-                        <p class="contain">
+                        <p class="contain text-left">
                             The Web Developer who builds semantic, mobile-responsive websites and
                             apps optimised for both speed and performance, while complying with modern web standards and features. <br>
                             <br>
@@ -114,35 +118,30 @@
 
             <article id="projects" class="section section--grey">
                 <header>
-                    <h3 class="title">Projects</h3>
+                    <h3 class="title">Work</h3>
                     <i class="dots"></i>
                 </header>
                 <p class="contain contain--large">
-                    Below is a small sampling of our past projects.
-                    A mixture of work created separately for clients and agencies, and together as a team.
+                    Below is a small sample of our past projects
+                    &mdash; a mixture of work either created together or individually for clients, agencies and studios.
                 </p>
             </article>
 
-            <section id="contact" class="section section--earth">
+            <section id="contact" class="section section--earth section--contact">
                 <header>
                     <h3 class="title">Contact</h3>
                     <i class="dots"></i>
                 </header>
-                <p class="contain contain--large">
-                    If you are interested in working with us,
-                    please do get in touch. We’d love nothing more
-                    than to bond over an exciting project. <br>
-                    <br><br>
-                    <a href="mailto:studio@getbrewer.com">studio@getbrewer.com</a>
+                <p class="contain contain--large text-left">
+                    If you are interested in working together, or even just have something you think we might be able to help with, please do get in touch, with either of us.
+                    <br>
+                    If you require only design or web development, that’s OK too. Don’t worry, the other won’t be offended. <br>
                 </p>
-                <div class="separator"></div>
-                <div class="cols">
-                    <header>
-                        <p class="contain contain--large">We can also be reached individually below, if you require only design or development. Don’t worry, the other won’t be offended.</p>
-                    </header>
+                <div class="separator"></div><br>
+                <div class="cols text-left">
                     <article class="col-1-2">
                         <header>
-                            <h4 class="color-red profile-title">Jake Brewer</h4>
+                            <h4 class="color-red profile-title profile-title--nodot">Jake Brewer</h4>
                         </header>
                         <p>
                             Graphic &amp; Digital Design, <br>
@@ -151,10 +150,16 @@
                             <a href="mailto:jake@studiobrewer.com">jake@studiobrewer.com</a> <br>
                             <a href="studiobrewer.com" target="_blank">studiobrewer.com</a>
                         </p>
+                        <aside class="social-links color-red">
+                            <a href="#" class="icon-twitter"></a>
+                            <a href="#" class="icon-linkedin"></a>
+                            <a href="#" class="icon-pinterest"></a>
+                            <a href="#" class="icon-instagram"></a>
+                        </aside>
                     </article>
                     <article class="col-1-2">
                         <header>
-                            <h4 class="color-blue profile-title">Adam Brewer</h4>
+                            <h4 class="color-blue profile-title profile-title--nodot">Adam Brewer</h4>
                         </header>
                         <p>
                             Front-End <br>
@@ -173,14 +178,13 @@
             <p class="inner">
                All content &copy; <?= date('Y'); ?> Jake &amp; Adam Brewer,
                 including respective agencies and clients.
-                Please do not reproduce without consent;
-                we will find you.
+                Please do not reproduce without consent <br>
+                &mdash; we will find you.
             </p>
         </footer>
     </div>
 
-    <script src="assets/js/libs/jquery.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.min.js"></script>
 
     <script>
         // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

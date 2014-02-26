@@ -30,3 +30,43 @@
     font-weight: 700;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.eot?91718984');
+  src: url('../fonts/icons.eot?91718984#iefix') format('embedded-opentype'),
+       url('../fonts/icons.woff?91718984') format('woff'),
+       url('../fonts/icons.ttf?91718984') format('truetype'),
+       url('../fonts/icons.svg?91718984#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  // margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+
+.icon-home:before { content: '\e800'; } /* '' */
+.icon-down-open:before { content: '\e802'; } /* '' */
+.icon-down-open-mini:before { content: '\e803'; } /* '' */
+.icon-down-open-big:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e806'; } /* '' */
+.icon-pinterest:before { content: '\e805'; } /* '' */
+.icon-linkedin:before { content: '\e804'; } /* '' */
+.icon-instagram:before { content: '\e807'; } /* '' */

@@ -30,10 +30,20 @@
 	b.setAttribute("data-platform", Site.platform);
 
 
-	/**
-	 * Custom functions here
-	 *
-	 */
+    /**
+     * Smooth scrolling
+     *
+     */
+	$('.js-smoothscroll').smoothScroll({
+        offset: 1,
+        preventDefault: true,
+        easing: 'easeInOutExpo',
+        speed: 900,
+        afterScroll: function() {
+            window.location.hash = this.hash || '';
+        }
+    });
+
 
 
 }(window, document));

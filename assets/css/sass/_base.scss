@@ -53,12 +53,13 @@ body {
 
 a {
     text-decoration: none;
-    border-bottom: 1px solid $c-black;
+    border-bottom: 1px solid transparent;
+    font-weight: 600;
     @include transition(0.2s ease all);
 }
 a:visited {}
 a:hover {
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid $c-black;
     text-decoration: none;
 }
 a:active {}

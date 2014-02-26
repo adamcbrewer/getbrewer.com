@@ -86,7 +86,7 @@ module.exports = function(grunt) {
         uglify: {
             development: {
                 options: {
-                    banner: '<%= banner %>',
+                    // banner: '<%= banner %>',
                     compress: false,
                     preserveComments: true,
                     mangle: false,
@@ -96,8 +96,10 @@ module.exports = function(grunt) {
                 files: [
                     {
                         src: [
+                            'assets/js/libs/jquery.js',
+                            'assets/js/libs/jquery.easing.js',
+                            'assets/js/libs/jquery.smoothscroll.js',
                             'assets/js/script.js',
-                            'assets/js/libs/jquery.js'
                         ],
                         dest: 'assets/js/main.min.js'
                     }
@@ -105,7 +107,7 @@ module.exports = function(grunt) {
             },
             production: {
                 options: {
-                    banner: '<%= banner %>',
+                    // banner: '<%= banner %>',
                     compress: true,
                     preserveComments: false,
                     mangle: false,
@@ -115,8 +117,10 @@ module.exports = function(grunt) {
                 files: [
                     {
                         src: [
+                            'assets/js/libs/jquery.js',
+                            'assets/js/libs/jquery.easing.js',
+                            'assets/js/libs/jquery.smoothscroll.js',
                             'assets/js/script.js',
-                            'assets/js/libs/jquery.js'
                         ],
                         dest: 'assets/js/main.min.js'
                     }
