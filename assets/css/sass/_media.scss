@@ -1,0 +1,107 @@
+@media screen and (max-width: 960px) {
+    .project {
+        margin-bottom: 1em;
+    }
+    .project-description,
+    .project-image {
+        float: none;
+        width: 100%;
+    }
+    .project-description {
+        padding-bottom: 40px;
+    }
+    .project-image {
+        text-align: center;
+    }
+    .section.section--contact {
+        .cols {
+            padding-left: 5em;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .header-bg {
+        height: 444px;
+    }
+    .profile-pictures {
+        .profile-pic {
+            max-width: 220px;
+        }
+    }
+    .section.section--contact {
+        .cols {
+            padding-left: 3em;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cols {
+        padding: 0 0 !important;
+        [class*=col-1-] {
+            margin-bottom: 4em;
+            width: 100%;
+            float: none;
+            text-align: center;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .profile-pictures.profile-pictures--small:before {
+        display: none;
+    }
+    .profile-pictures.profile-pictures--small {
+        .contain {
+            max-width: 80%;
+            text-align: center;
+        }
+        .profile-pic {
+            max-width: 240px;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header-bg {
+        height: 400px;
+    }
+    .profile-pictures {
+        .profile-pic {
+            max-width: 140px;
+            border-width: 4px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    .profile-pictures {
+        .profile-pic {
+            max-width: 100px;
+        }
+    }
+
+}
+
+
+/* ==|== print styles =======================================================
+    Print styles.
+    Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+
+@media print {
+    * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+    a, a:visited { text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; } /* h5bp.com/t */
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    @page { margin: .5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+}

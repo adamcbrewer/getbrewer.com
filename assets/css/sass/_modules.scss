@@ -23,6 +23,7 @@
 }
 .section {
 	padding: 5em 4%;
+    position: relative;
 
 	&.section--earth {
 		background-color: $c-earth;
@@ -52,16 +53,19 @@
 .nav-item {
     display: inline-block;
     border-bottom: 2px solid transparent;
-    color: #fff;;
+    color: #fff;
+    font-weight: normal;
     @include font-size(1.4);
     margin: 0 1.6em;
+    @include transition(0.2s ease all);
 
     // &:last-child {
     //     margin-right:
     // }
 
-    &:hover {
-        border-bottom: 2px solid $c-black;
+    &:hover,
+    &.active {
+        border-bottom: 2px solid #fff;;
         color: #fff;;
     }
 
@@ -287,4 +291,36 @@
 .project-image {
     width: 72%;
     float: right;
+}
+
+.section-arrow {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -26px;
+    background: #fff;
+    color: $c-text;
+    border-radius: 50%;
+    border: none;
+    width: 58px;
+    height: 58px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    line-height: 68px;
+    @include font-size(1.7);
+
+    &:hover {
+        border: none;
+        background-color: $c-earth;
+        // color: #fff;
+    }
+
+    &:before {
+        // width: 32px;
+        margin: 0 auto 0;
+    }
+
 }

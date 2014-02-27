@@ -391,21 +391,33 @@ p {
 .nav {
   position: fixed;
   z-index: 3;
-  top: 10px;
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
   text-align: right;
   margin: 0em auto 0;
-  padding: 10px 2% 17px;
+  padding: 20px 2% 18px;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(217, 217, 217, 0.3);
   font-family: Bebas, Arial, sans-serif;
+  -webkit-transition: 0.2s ease background-color;
+  transition: 0.2s ease background-color;
+}
+.nav.affix {
+  padding-top: 14px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.nav.affix .nav-item {
+  color: #2f2f2f;
+}
+.nav.affix .nav-item:hover, .nav.affix .nav-item.active {
+  border-bottom: 2px solid #2f2f2f;
 }
 
 .profile-pictures {
   text-align: center;
-  margin-top: 2.6em;
+  margin-top: 3.6em;
   font-size: 16px;
   font-size: 1.6rem;
 }
@@ -472,6 +484,7 @@ p {
 
 .section {
   padding: 5em 4%;
+  position: relative;
 }
 .section.section--earth {
   background-color: #f5f5f3;
@@ -498,12 +511,15 @@ p {
   display: inline-block;
   border-bottom: 2px solid transparent;
   color: #fff;
+  font-weight: normal;
   font-size: 14px;
   font-size: 1.4rem;
   margin: 0 1.6em;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
 }
-.nav-item:hover {
-  border-bottom: 2px solid #2f2f2f;
+.nav-item:hover, .nav-item.active {
+  border-bottom: 2px solid #fff;
   color: #fff;
 }
 
@@ -711,6 +727,111 @@ p {
   float: right;
 }
 
+.section-arrow {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -26px;
+  background: #fff;
+  color: #2f2f2f;
+  border-radius: 50%;
+  border: none;
+  width: 58px;
+  height: 58px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  line-height: 68px;
+  font-size: 17px;
+  font-size: 1.7rem;
+}
+.section-arrow:hover {
+  border: none;
+  background-color: #f5f5f3;
+}
+.section-arrow:before {
+  margin: 0 auto 0;
+}
+
+@media screen and (max-width: 960px) {
+  .project {
+    margin-bottom: 1em;
+  }
+
+  .project-description,
+  .project-image {
+    float: none;
+    width: 100%;
+  }
+
+  .project-description {
+    padding-bottom: 40px;
+  }
+
+  .project-image {
+    text-align: center;
+  }
+
+  .section.section--contact .cols {
+    padding-left: 5em;
+  }
+}
+@media screen and (max-width: 770px) {
+  .header-bg {
+    height: 444px;
+  }
+
+  .profile-pictures .profile-pic {
+    max-width: 220px;
+  }
+
+  .section.section--contact .cols {
+    padding-left: 3em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .cols {
+    padding: 0 0 !important;
+  }
+  .cols [class*=col-1-] {
+    margin-bottom: 4em;
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .cols [class*=col-1-]:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-pictures.profile-pictures--small:before {
+    display: none;
+  }
+
+  .profile-pictures.profile-pictures--small .contain {
+    max-width: 80%;
+    text-align: center;
+  }
+  .profile-pictures.profile-pictures--small .profile-pic {
+    max-width: 240px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .header-bg {
+    height: 400px;
+  }
+
+  .profile-pictures .profile-pic {
+    max-width: 140px;
+    border-width: 4px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .profile-pictures .profile-pic {
+    max-width: 100px;
+  }
+}
 /* ==|== print styles =======================================================
     Print styles.
     Inlined to avoid required HTTP connection: h5bp.com/r

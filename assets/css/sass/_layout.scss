@@ -56,29 +56,35 @@
 .nav {
     position: fixed;
     z-index: 3;
-    top: 10px;
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
     text-align: right;
     margin: 0em auto 0;
-    padding: 10px 2% 17px;
+    padding: 20px 2% 18px;
     text-transform: uppercase;
     border-bottom: 1px solid fade-out($c-lightgrey, 0.7);
     // font-weight: bold;
     font-family: $ff-title;
+    @include transition(0.2s ease background-color);
 
-
-    // &:after {
-    //     content: '';
-    //     display: inline-block;
-    //     width: 100%;
-    // }
+    &.affix {
+        padding-top: 14px;
+        background-color: rgba(0, 0, 0, 0.1);
+        .nav-item {
+            color: $c-text;
+            &:hover,
+            &.active {
+                border-bottom: 2px solid $c-text;
+            }
+        }
+    }
 
 }
 .profile-pictures {
     text-align: center;
-    margin-top: 2.6em;
+    margin-top: 3.6em;
     @include font-size(1.6);
 
     .profile-pic {

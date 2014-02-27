@@ -45,5 +45,24 @@
     });
 
 
+    /**
+     * Affix the nav
+     *
+     */
+    $('.js-affix').affix({
+        offset: {
+            top: 450
+        }
+    });
+
+
+    /**
+     * Current nav state when scrolling
+     *
+     */
+    $('body').scrollspy({
+        offset: 67
+    });
+
 
 }(window, document));

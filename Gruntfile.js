@@ -99,6 +99,8 @@ module.exports = function(grunt) {
                             'assets/js/libs/jquery.js',
                             'assets/js/libs/jquery.easing.js',
                             'assets/js/libs/jquery.smoothscroll.js',
+                            'assets/js/libs/bootstrap.affix.js',
+                            'assets/js/libs/bootstrap.scrollspy.js',
                             'assets/js/script.js',
                         ],
                         dest: 'assets/js/main.min.js'
@@ -120,6 +122,8 @@ module.exports = function(grunt) {
                             'assets/js/libs/jquery.js',
                             'assets/js/libs/jquery.easing.js',
                             'assets/js/libs/jquery.smoothscroll.js',
+                            'assets/js/libs/bootstrap.affix.js',
+                            'assets/js/libs/bootstrap.scrollspy.js',
                             'assets/js/script.js',
                         ],
                         dest: 'assets/js/main.min.js'

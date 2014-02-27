@@ -28,11 +28,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
-<body data-base-url="" id="home">
+<body data-base-url="" id="home" data-spy="scroll" data-target=".nav">
 
     <div class="wrapper">
 
-        <nav class="nav">
+        <nav class="nav js-affix">
             <a class="nav-home js-smoothscroll icon-home" href="#home"></a>
             <a class="nav-item js-smoothscroll" href="#what-we-do">What We Do</a>
             <a class="nav-item js-smoothscroll" href="#projects">Projects</a>
@@ -59,6 +59,8 @@
                 </div>
 
                 <h2 class="strapline contain">The design and development partnership of Jake and Adam Brewer. Brothers, in a digital world.</h2>
+
+                <a href="#what-we-do" class="js-smoothscroll section-arrow icon-down-open-big"></a>
 
             </header>
 
