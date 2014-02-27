@@ -125,6 +125,44 @@
                     Below is a small sample of our past projects
                     &mdash; a mixture of work either created together or individually for clients, agencies and studios.
                 </p>
+
+                <section class="projects">
+                    <article class="project">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>Manchester City FC</h4>
+                                <p>Strategic Roadmap</p>
+                            </header>
+
+                            <p>Design &amp; Layout</p>
+
+                            <p>An online graph charting planned activity, growth and digital strategy to board members and digital trade shows.</p>
+
+                            <a target="_blank" href="#">Full details here.</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="http://www.placecage.com/860/600" alt="">
+                        </figure>
+                    </article>
+                    <article class="project project--desc-right">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>Manchester City FC</h4>
+                                <p>Strategic Roadmap</p>
+                            </header>
+
+                            <p>Design &amp; Layout</p>
+
+                            <p>An online graph charting planned activity, growth and digital strategy to board members and digital trade shows.</p>
+
+                            <a target="_blank" href="#">Full details here.</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="http://www.placecage.com/1000/700" alt="">
+                        </figure>
+                    </article>
+                </section>
+
             </article>
 
             <section id="contact" class="section section--earth section--contact">

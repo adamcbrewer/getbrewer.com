@@ -6,6 +6,9 @@
     border-radius: 50%;
     background-color: #fff;
 }
+%text-left {
+    text-align: left;
+}
 .ri {
     > img { max-width: 100%; }
 }
@@ -16,7 +19,7 @@
     color: $c-red;
 }
 .text-left {
-    text-align: left;
+    @extend %text-left;
 }
 .section {
 	padding: 5em 4%;
@@ -254,4 +257,34 @@
         text-indent: -9999px;
         display: inline-block;
     }
+}
+
+.project {
+    max-width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+    @extend %text-left;
+
+    &.project--desc-right {
+        .project-description {
+            float: right;
+        }
+        .project-image {
+            float: left;
+        }
+    }
+}
+.project-header {
+    @include font-size(1.8);
+}
+.project-description {
+    width: 28%;
+    float: left;
+    background-color: #fff;
+    padding: 40px 40px 60px;
+    @include font-size(1.6);
+}
+.project-image {
+    width: 72%;
+    float: right;
 }

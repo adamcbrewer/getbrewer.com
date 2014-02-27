@@ -358,7 +358,7 @@ p {
 }
 
 .footer {
-  color: silver;
+  color: #a6a6a6;
   padding: 100px 4% 200px;
   font-size: 16px;
   font-size: 1.6rem;
@@ -441,6 +441,10 @@ p {
   margin: 0 3em;
 }
 
+.projects {
+  margin: 6em auto 4em;
+}
+
 .dots:before, .dots:after, .profile-title:after {
   content: '';
   width: 8px;
@@ -448,6 +452,10 @@ p {
   display: block;
   border-radius: 50%;
   background-color: #fff;
+}
+
+.text-left, .project {
+  text-align: left;
 }
 
 .ri > img {
@@ -460,10 +468,6 @@ p {
 
 .color-red {
   color: #d44537;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .section {
@@ -674,6 +678,37 @@ p {
 .social-link > span {
   text-indent: -9999px;
   display: inline-block;
+}
+
+.project {
+  max-width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.project.project--desc-right .project-description {
+  float: right;
+}
+.project.project--desc-right .project-image {
+  float: left;
+}
+
+.project-header {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.project-description {
+  width: 28%;
+  float: left;
+  background-color: #fff;
+  padding: 40px 40px 60px;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.project-image {
+  width: 72%;
+  float: right;
 }
 
 /* ==|== print styles =======================================================
