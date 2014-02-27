@@ -32,9 +32,18 @@
 		background-color: $c-lightgrey;
 	}
 
+    &.section--home {
+        .contain {
+            margin-top: 0.8em;
+            margin-bottom: -0.8em;
+        }
+    }
     &.section--profiles {
         position: relative;
         padding-top: 0;
+        .profile-title {
+            @include font-size(2);
+        }
     }
     &.section--whatwedo {
         padding-bottom: 2em;
@@ -46,7 +55,11 @@
         .cols {
             padding-left: 6em;
             overflow: hidden;
+            p {
+                margin-bottom: 1em;
+            }
         }
+
     }
 }
 
@@ -69,9 +82,15 @@
         color: #fff;;
     }
 
+    .touch & {
+        margin: 0 1em;
+    }
+
 }
 
 .nav-home {
+    position: relative;
+    top: 1px;
     float: left;
     color: #2F2F2F;
     background-color: #fff;
@@ -81,7 +100,7 @@
     height: 34px;
     display: block;
     vertical-align: center;
-    line-height: 25px;
+    line-height: 27px;
 
     &:hover {
         border: none;
@@ -91,6 +110,10 @@
         @include font-size(1.9);
         width: 34px;
         margin: 0 auto;
+    }
+
+    .touch & {
+        display: none;
     }
 }
 
@@ -199,7 +222,7 @@
     }
 
     &.profile-title--nodot:after {
-     display: none;
+        display: none;
     }
 }
 
@@ -211,7 +234,7 @@
 }
 
 .social-links {
-
+    margin-top: 2em;
 }
 .social-link {
     color: #fff;

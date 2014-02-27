@@ -35,13 +35,13 @@
         <nav class="nav js-affix">
             <a class="nav-home js-smoothscroll icon-home" href="#home"></a>
             <a class="nav-item js-smoothscroll" href="#what-we-do">What We Do</a>
-            <a class="nav-item js-smoothscroll" href="#projects">Projects</a>
+            <a class="nav-item js-smoothscroll" href="#projects">Work</a>
             <a class="nav-item js-smoothscroll" href="#contact">Contact</a>
         </nav>
 
         <section class="content">
 
-            <header class="section">
+            <header class="section section--home">
                 <div class="header-bg"></div>
                 <h1 class="site-title">
                     <span class="site-title--small">Get</span><br>
@@ -51,10 +51,10 @@
 
                 <div class="profile-pictures">
                     <figure class="ri profile-pic">
-                        <img src="assets/img/jake.jpg" alt="Jake">
+                        <img src="assets/img/jake-red.png" alt="Jake">
                     </figure>
                     <figure class="ri profile-pic">
-                        <img src="assets/img/adam.jpg" alt="Adam">
+                        <img src="assets/img/adam-blue.png" alt="Adam">
                     </figure>
                 </div>
 
@@ -72,7 +72,7 @@
                     </header>
                     <p class="contain contain--large text-left">
                         Apart, Jake and Adam work on a freelance basis for
-                        advertising and creative agencies — including individual
+                        advertising and digital agencies — including individual
                         clients — in and around London. <br>
                         <br>
                         Together, they combine their skills, extensive experience and
@@ -135,11 +135,8 @@
                                 <h4>Manchester City FC</h4>
                                 <p>Strategic Roadmap</p>
                             </header>
-
                             <p>Design &amp; Layout</p>
-
                             <p>An online graph charting planned activity, growth and digital strategy to board members and digital trade shows.</p>
-
                             <a target="_blank" href="#">Full details here.</a>
                         </aside>
                         <figure class="project-image ri">
@@ -152,11 +149,8 @@
                                 <h4>Manchester City FC</h4>
                                 <p>Strategic Roadmap</p>
                             </header>
-
                             <p>Design &amp; Layout</p>
-
                             <p>An online graph charting planned activity, growth and digital strategy to board members and digital trade shows.</p>
-
                             <a target="_blank" href="#">Full details here.</a>
                         </aside>
                         <figure class="project-image ri">
@@ -173,7 +167,7 @@
                     <i class="dots"></i>
                 </header>
                 <p class="contain contain--large text-left">
-                    If you are interested in working together, or even just have something you think we might be able to help with, please do get in touch, with either of us.
+                    If you are interested in working together, or even just have something you think we might be able to help with, please do get in touch, with either of us. <br>
                     <br>
                     If you require only design or web development, that’s OK too. Don’t worry, the other won’t be offended. <br>
                 </p>
@@ -181,14 +175,15 @@
                 <div class="cols text-left">
                     <article class="col-1-2">
                         <header>
-                            <h4 class="color-red profile-title profile-title--nodot">Jake Brewer</h4>
+                            <h4 class="color-red profile-title profile-title--nodot">Jake &nbsp; Brewer</h4>
                         </header>
                         <p>
                             Graphic &amp; Digital Design, <br>
                             Art Direction &amp; Illustration <br>
-                            <br>
-                            <a href="mailto:jake@studiobrewer.com">jake@studiobrewer.com</a> <br>
-                            <a href="studiobrewer.com" target="_blank">studiobrewer.com</a>
+                            <p>
+                                <a href="mailto:jake@studiobrewer.com">jake@studiobrewer.com</a> <br>
+                                <a href="studiobrewer.com" target="_blank">studiobrewer.com</a>
+                            </p>
                         </p>
                         <aside class="social-links color-red">
                             <a target="_blank" href="https://twitter.com/jakefbrewer" class="social-link icon-twitter"><span>Twitter</span></a>
@@ -199,14 +194,15 @@
                     </article>
                     <article class="col-1-2">
                         <header>
-                            <h4 class="color-blue profile-title profile-title--nodot">Adam Brewer</h4>
+                            <h4 class="color-blue profile-title profile-title--nodot">Adam &nbsp; Brewer</h4>
                         </header>
                         <p>
                             Front-End <br>
                             Web Development <br>
-                            <br>
-                            <a href="mailto:adam@brewerlogic.com">adam@brewerlogic.com</a> <br>
-                            <a href="brewerlogic.com" target="_blank">brewerlogic.com</a>
+                            <p>
+                                <a href="mailto:adam@brewerlogic.com">adam@brewerlogic.com</a> <br>
+                                <a href="brewerlogic.com" target="_blank">brewerlogic.com</a>
+                            </p>
                         </p>
                         <aside class="social-links color-blue">
                             <a target="_blank" href="https://twitter.com/adamcbrewer" class="social-link icon-twitter"><span>Twitter</span></a>

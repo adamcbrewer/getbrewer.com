@@ -295,8 +295,8 @@ body {
   font-family: Karla, Arial, sans-serif;
   background-color: white;
   color: #2f2f2f;
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -329,14 +329,14 @@ p {
 }
 
 .wrapper {
-  padding-top: 10px;
+  padding-top: 8px;
   position: relative;
   text-align: center;
 }
 .wrapper:before {
   content: '';
   width: 100%;
-  height: 10px;
+  height: 8px;
   position: absolute;
   display: block;
   top: 0;
@@ -353,13 +353,13 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 488px;
+  height: 440px;
   background: #333333 url(../img/bg-header.jpg) top left repeat;
 }
 
 .footer {
   color: #a6a6a6;
-  padding: 100px 4% 200px;
+  padding: 80px 4% 200px;
   font-size: 16px;
   font-size: 1.6rem;
 }
@@ -389,7 +389,7 @@ p {
 }
 
 .nav {
-  position: fixed;
+  position: absolute;
   z-index: 3;
   top: 0;
   left: 0;
@@ -397,15 +397,18 @@ p {
   width: 100%;
   text-align: right;
   margin: 0em auto 0;
-  padding: 20px 2% 18px;
+  padding: 23px 2% 18px;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(217, 217, 217, 0.3);
   font-family: Bebas, Arial, sans-serif;
   -webkit-transition: 0.2s ease background-color;
   transition: 0.2s ease background-color;
 }
+.nav.affix-top {
+  position: fixed;
+}
 .nav.affix {
-  padding-top: 14px;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.1);
 }
 .nav.affix .nav-item {
@@ -414,16 +417,20 @@ p {
 .nav.affix .nav-item:hover, .nav.affix .nav-item.active {
   border-bottom: 2px solid #2f2f2f;
 }
+.touch .nav {
+  text-align: center;
+}
 
 .profile-pictures {
   text-align: center;
-  margin-top: 3.6em;
+  margin-top: 2em;
   font-size: 16px;
   font-size: 1.6rem;
 }
 .profile-pictures .profile-pic {
-  max-width: 290px;
+  max-width: 280px;
   border: 10px solid #fff;
+  background-color: #fff;
   margin: 0 1.2em;
 }
 .profile-pictures .contain {
@@ -492,9 +499,17 @@ p {
 .section.section--grey {
   background-color: #d9d9d9;
 }
+.section.section--home .contain {
+  margin-top: 0.8em;
+  margin-bottom: -0.8em;
+}
 .section.section--profiles {
   position: relative;
   padding-top: 0;
+}
+.section.section--profiles .profile-title {
+  font-size: 20px;
+  font-size: 2rem;
 }
 .section.section--whatwedo {
   padding-bottom: 2em;
@@ -505,6 +520,9 @@ p {
 .section.section--contact .cols {
   padding-left: 6em;
   overflow: hidden;
+}
+.section.section--contact .cols p {
+  margin-bottom: 1em;
 }
 
 .nav-item {
@@ -522,8 +540,13 @@ p {
   border-bottom: 2px solid #fff;
   color: #fff;
 }
+.touch .nav-item {
+  margin: 0 1em;
+}
 
 .nav-home {
+  position: relative;
+  top: 1px;
   float: left;
   color: #2F2F2F;
   background-color: #fff;
@@ -533,7 +556,7 @@ p {
   height: 34px;
   display: block;
   vertical-align: center;
-  line-height: 25px;
+  line-height: 27px;
 }
 .nav-home:hover {
   border: none;
@@ -543,6 +566,9 @@ p {
   font-size: 1.9rem;
   width: 34px;
   margin: 0 auto;
+}
+.touch .nav-home {
+  display: none;
 }
 
 .dots {
@@ -647,6 +673,10 @@ p {
   width: 980px;
   max-width: 90%;
   margin: 4em auto 1em;
+}
+
+.social-links {
+  margin-top: 2em;
 }
 
 .social-link {
@@ -780,7 +810,7 @@ p {
 }
 @media screen and (max-width: 770px) {
   .header-bg {
-    height: 444px;
+    height: 410px;
   }
 
   .profile-pictures .profile-pic {
@@ -819,17 +849,38 @@ p {
 }
 @media screen and (max-width: 580px) {
   .header-bg {
-    height: 400px;
+    height: 370px;
   }
 
   .profile-pictures .profile-pic {
     max-width: 140px;
     border-width: 4px;
   }
+
+  .section {
+    padding: 4em 4%;
+  }
+
+  .section--profiles {
+    padding-top: 0;
+  }
+
+  .section--whatwedo {
+    padding-bottom: 2em;
+  }
+
+  .projects {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 410px) {
+  .header-bg {
+    height: 354px;
+  }
+
   .profile-pictures .profile-pic {
-    max-width: 100px;
+    max-width: 120px;
+    margin: 0 0.4em;
   }
 }
 /* ==|== print styles =======================================================

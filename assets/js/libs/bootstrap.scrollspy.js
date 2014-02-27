@@ -94,8 +94,6 @@
       // .parentsUntil(this.options.target, '.active')
       .removeClass('active')
 
-    console.log($(this.selector));
-
     var selector = this.selector +
         '[data-target="' + target + '"],' +
         this.selector + '[href="' + target + '"]'

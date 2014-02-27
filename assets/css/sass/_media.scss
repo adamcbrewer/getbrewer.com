@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 770px) {
     .header-bg {
-        height: 444px;
+        height: 410px;
     }
     .profile-pictures {
         .profile-pic {
@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 580px) {
     .header-bg {
-        height: 400px;
+        height: 370px;
     }
     .profile-pictures {
         .profile-pic {
@@ -73,13 +73,28 @@
             border-width: 4px;
         }
     }
-
+    .section {
+        padding: 4em 4%;
+    }
+    .section--profiles {
+        padding-top: 0;
+    }
+    .section--whatwedo {
+        padding-bottom: 2em;
+    }
+    .projects {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 410px) {
+    .header-bg {
+        height: 354px;
+    }
     .profile-pictures {
         .profile-pic {
-            max-width: 100px;
+            max-width: 120px;
+            margin: 0 0.4em;
         }
     }
 

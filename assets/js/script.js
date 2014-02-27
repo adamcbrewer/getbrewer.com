@@ -2,20 +2,36 @@
  * Author: Adam Brewer
  *
  */
-;(function(window, document, undefined){
+;(function(window, document, $, undefined){
 
-	/**
-	 * Name-spacing
-	 *
-	 * Here we have to specifially define which
-	 * objects belong in the global object
-	 *
-	 */
-	window.Site = {
-		basePath: document.body.getAttribute('data-base-url'),
-		userAgent: navigator.userAgent,
-		platform: navigator.platform
-	};
+    'use strict';
+
+    /**
+     * Name-spacing
+     *
+     * Here we have to specifially define which
+     * objects belong in the global object
+     *
+     */
+    var Site = {
+        basePath: document.body.getAttribute('data-base-url'),
+        userAgent: navigator.userAgent,
+        platform: navigator.platform
+    };
+    window.Site = Site;
+
+
+    /**
+     * Touch feature detection
+     *
+     */
+    (function (h) {
+        h.className = h.className.replace('no-js', 'js');
+        if (('ontouchstart' in window) || window.DocumentTouch && document instanceof window.DocumentTouch) {
+            h.className += ' touch';
+            window.Site.touch = true;
+        }
+    })(document.documentElement);
 
 
 	/**
@@ -49,11 +65,13 @@
      * Affix the nav
      *
      */
-    $('.js-affix').affix({
-        offset: {
-            top: 450
-        }
-    });
+    if (!Site.touch) {
+        $('.js-affix').affix({
+            offset: {
+                top: 400
+            }
+        });
+    }
 
 
     /**
@@ -65,4 +83,4 @@
     });
 
 
-}(window, document));
+}(window, document, jQuery));
