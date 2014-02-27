@@ -151,10 +151,10 @@
                             <a href="studiobrewer.com" target="_blank">studiobrewer.com</a>
                         </p>
                         <aside class="social-links color-red">
-                            <a href="#" class="icon-twitter"></a>
-                            <a href="#" class="icon-linkedin"></a>
-                            <a href="#" class="icon-pinterest"></a>
-                            <a href="#" class="icon-instagram"></a>
+                            <a target="_blank" href="https://twitter.com/jakefbrewer" class="social-link icon-twitter"><span>Twitter</span></a>
+                            <a target="_blank" href="http://www.linkedin.com/in/brewerjake" class="social-link icon-linkedin"><span>LinkedIn</span></a>
+                            <a target="_blank" href="http://www.pinterest.com/studiobrewer" class="social-link icon-pinterest"><span>Pinterest</span></a>
+                            <a target="_blank" href="http://instagram.com/jakefbrewer" class="social-link icon-instagram"><span>Instagram</span></a>
                         </aside>
                     </article>
                     <article class="col-1-2">
@@ -168,6 +168,12 @@
                             <a href="mailto:adam@brewerlogic.com">adam@brewerlogic.com</a> <br>
                             <a href="brewerlogic.com" target="_blank">brewerlogic.com</a>
                         </p>
+                        <aside class="social-links color-blue">
+                            <a target="_blank" href="https://twitter.com/adamcbrewer" class="social-link icon-twitter"><span>Twitter</span></a>
+                            <a target="_blank" href="http://www.linkedin.com/in/adamcbrewer" class="social-link icon-linkedin"><span>LinkedIn</span></a>
+                            <a target="_blank" href="http://www.pinterest.com/adamcbrewer" class="social-link icon-pinterest"><span>Pinterest</span></a>
+                            <a target="_blank" href="http://instagram.com/adamcbrewer" class="social-link icon-instagram"><span>Instagram</span></a>
+                        </aside>
                     </article>
                 </div>
             </section>
