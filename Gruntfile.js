@@ -180,4 +180,9 @@ module.exports = function(grunt) {
         'notify:build',
     ]);
 
+    // prep files for production
+    grunt.registerTask('images', [
+        'imagemin:production'
+    ]);
+
 };
