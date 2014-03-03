@@ -83,4 +83,29 @@
     });
 
 
+    /**
+     * Easter egg
+     *
+     */
+    var konami = function(f,a){document.onkeyup=function(e){/113302022928$/.test(a+=[((e||self.event).keyCode-37)])&&f()}}
+    konami(egg);
+
+    function egg() {
+        $('.js-adam').attr('src', Site.basePath + 'assets/img/min/stimpy.jpg');
+        $('.js-jake').attr('src', Site.basePath + 'assets/img/min/ren.jpg');
+
+        var audio = document.createElement('audio');
+        audio.src = Site.basePath + "assets/audio/ren-stimpy.mp3";
+        document.body.appendChild(audio);
+        audio.play();
+
+        $(document).on('keyup', function (evt) {
+            if (evt.keyCode === 27) {
+                if (audio) audio.parentNode.removeChild(audio);
+            }
+        });
+    }
+
+    console.info('Hello developers!');
+
 }(window, document, jQuery));

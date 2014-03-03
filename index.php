@@ -1,6 +1,5 @@
 <!doctype html>
-<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
@@ -9,23 +8,34 @@
 
     <title>Get Brewer</title>
 
-    <link type="text/plain" rel="author" href="humans.txt" />
+    <link type="text/plain" rel="author" href="http://getbrewer.com/humans.txt" />
     <meta name="robots" content="all">
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
-    <!-- https://github.com/audreyr/favicon-cheat-sheet -->
+    <link rel="icon" type="image/png" href="http://getbrewer.com/assets/img/favicon.png">
 
-    <meta name="description" content="The design and development practice of Jake and Adam Brewer. Brothers in a digital world.">
-    <meta name="keywords" content="studiobrewer, brewerlogic, web design, web development, Jake Brewer, Adam Brewer, web development london, web design london">
+    <meta name="description" content="The design and development partnership of Jake and Adam Brewer. Brothers, in a digital world.">
+    <meta name="keywords" content="studiobrewer, brewerlogic, websites, web design, web development, Jake Brewer, Adam Brewer, web development london, web design london">
     <meta name="google-site-verification" content="Ml0cxuOA7IY2-6R6Ho_Dou43vMWHYHJxY2RG_EAHorY" />
 
     <meta property="og:title" content="Get Brewer"/>
-    <meta property="og:image" content=""/>
+    <meta property="og:image" content="http://getbrewer.com/assets/img/min/getbrewer-share.jpg"/>
+    <meta property="og:image:width" content="398" />
+    <meta property="og:image:height" content="208" />
     <meta property="og:url" content="http://getbrewer.com"/>
     <meta property="og:site_name" content="Get Brewer"/>
-    <meta property="og:description" content="The design and development practice of Jake and Adam Brewer. Brothers in a digital world."/>
+    <meta property="og:description" content="The design and development partnership of Jake and Adam Brewer. Brothers, in a digital world."/>
 
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-47362471-1', 'getbrewer.com');
+        ga('send', 'pageview');
+    </script>
+
 
 </head>
 <body data-base-url="" id="home" data-spy="scroll" data-target=".nav">
@@ -51,10 +61,10 @@
 
                 <div class="profile-pictures">
                     <figure class="ri profile-pic">
-                        <img src="assets/img/jake-red.png" alt="Jake">
+                        <img class="js-jake" src="assets/img/min/jake-red.png" alt="Jake">
                     </figure>
                     <figure class="ri profile-pic">
-                        <img src="assets/img/adam-blue.png" alt="Adam">
+                        <img class="js-adam" src="assets/img/min/adam-blue.png" alt="Adam">
                     </figure>
                 </div>
 
@@ -71,11 +81,12 @@
                         <i class="dots"></i>
                     </header>
                     <p class="contain contain--large text-left">
+                        We make websites&hellip; with a little extra. <br><br>
                         Apart, Jake and Adam work on a freelance basis for
                         advertising and digital agencies — including individual
                         clients — in and around London. <br>
                         <br>
-                        Together, they combine their skills, extensive experience and
+                        Together, they combine their complementary skills, extensive experience and
                         brotherly affection in a complete package, offering clients
                         a high-quality online presence, from desktop to mobile. <br>
                     </p>
@@ -87,7 +98,7 @@
                     <div class="col-1-2">
                         <header>
                             <figure class="ri profile-pic">
-                                <img src="assets/img/jake.jpg" alt="Jake">
+                                <img class="js-jake" src="assets/img/min/jake.jpg" alt="Jake">
                             </figure>
                             <h4 class="color-red profile-title">Jake</h4>
                         </header>
@@ -97,13 +108,13 @@
                             client industries. <br>
                             <br>
                             View Jake’s work at <br>
-                            <a href="studiobrewer.com" target="_blank">studiobrewer.com</a>
+                            <a href="http://studiobrewer.com" target="_blank">studiobrewer.com</a>
                         </p>
                     </div>
                     <div class="col-1-2">
                         <header>
                             <figure class="ri profile-pic">
-                                <img src="assets/img/adam.jpg" alt="Adam">
+                                <img class="js-adam" src="assets/img/min/adam.jpg" alt="Adam">
                             </figure>
                             <h4 class="color-blue profile-title">Adam</h4>
                         </header>
@@ -112,7 +123,7 @@
                             apps optimised for both speed and performance, while complying with modern web standards and features. <br>
                             <br>
                             View Adam’s work at <br>
-                            <a href="brewerlogic.com" target="_blank">brewerlogic.com</a>
+                            <a href="http://brewerlogic.com" target="_blank">brewerlogic.com</a>
                         </p>
                     </div>
                 </div>
@@ -123,7 +134,7 @@
                     <h3 class="title">Work</h3>
                     <i class="dots"></i>
                 </header>
-                <p class="contain contain--large">
+                <p class="contain contain--large text-left">
                     Below is a small sample of our past projects
                     &mdash; a mixture of work either created together or individually for clients, agencies and studios.
                 </p>
@@ -132,29 +143,128 @@
                     <article class="project">
                         <aside class="project-description">
                             <header class="project-header">
-                                <h4>Manchester City FC</h4>
-                                <p>Strategic Roadmap</p>
+                                <h4>Brewer’s Advertising Data</h4>
+                                <p>Brewer’s Apps</p>
                             </header>
-                            <p>Design &amp; Layout</p>
-                            <p>An online graph charting planned activity, growth and digital strategy to board members and digital trade shows.</p>
-                            <a target="_blank" href="#">Full details here.</a>
+                            <p>Design, Front/Back-end Development</p>
+                            <p>Device-responsive online app serving the exchange of information on people, products and companies within the advertising and marketing industries of South Africa.</p>
+                            (Currently in development)
                         </aside>
                         <figure class="project-image ri">
-                            <img src="http://www.placecage.com/860/600" alt="">
+                            <img src="assets/img/min/p.brewers_apps.jpg" alt="Brewers Apps">
                         </figure>
                     </article>
                     <article class="project project--desc-right">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>Google Search Indonesia</h4>
+                                <p>Google Search Showcase</p>
+                            </header>
+                            <p>Front-end Development</p>
+                            <p>A promotional site encouraging mobile users in Indonesia to try out Google's Search App. Device agnostic, the site is both responsive and swipe friendly.</p>
+                            <a target="_blank" href="http://www.google.co.id/insidesearch/landing/searchonindonesia/">Full details here.</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="assets/img/min/p.googlesearch_indo.jpg" alt="Google Search Indonesia">
+                        </figure>
+                    </article>
+                    <article class="project">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>Brewers Apps</h4>
+                                <p>Website</p>
+                            </header>
+                            <p>Design, Front-end &amp; Back-end.</p>
+                            <p>The paired site for Brewers Apps. A light, single-page responsive site, concisely highlighting the features.</p>
+                            <a target="_blank" href="http://brewers.co.za">brewers.co.za</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="assets/img/min/p.brewers.jpg" alt="brewers.co.za">
+                        </figure>
+                    </article>
+                    <article class="project project--desc-right">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>Nova Residential iPad App</h4>
+                                <p>Land Securities</p>
+                            </header>
+                            <p>Design</p>
+                            <p>iPad application for The Nova Building, situated on the doorstep of Buckingham Palace in London. Details of each apartment, including searching based on the number of bedrooms, interior finishings and aspect can be accessed by agents in an easy, simple and elegant way.</p>
+                            <a target="_blank" href="http://studiobrewer.com/?project=nova-residential-ipad-app">View more information</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="assets/img/min/p.nova.jpg" alt="Nova Residential iPad App">
+                        </figure>
+                    </article>
+                    <article class="project">
                         <aside class="project-description">
                             <header class="project-header">
                                 <h4>Manchester City FC</h4>
                                 <p>Strategic Roadmap</p>
                             </header>
                             <p>Design &amp; Layout</p>
-                            <p>An online graph charting planned activity, growth and digital strategy to board members and digital trade shows.</p>
-                            <a target="_blank" href="#">Full details here.</a>
+                            <p>An online graph charting planned activity, growth and digital strategy presented to board members and at digital trade shows.</p>
+                            <a target="_blank" href="http://studiobrewer.com/?project=strategic-roadmap">View more information</a>
                         </aside>
                         <figure class="project-image ri">
-                            <img src="http://www.placecage.com/1000/700" alt="">
+                            <img src="assets/img/min/p.mcfc_roadmap.jpg" alt="Manchester City Football Club - Roadmap">
+                        </figure>
+                    </article>
+                    <article class="project project--desc-right">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>Gather.ly</h4>
+                                <p>Content Discovery &amp; Distribution Platform</p>
+                            </header>
+                            <p>Front-end Development</p>
+                            <p>Trusted recommendations from credible sources, helping people to make choices – essentially a content discovery &amp; distribution platform for interest groups. Part of <a href="http://www.intrst.net/" target="_blank">The Interest Network</a>.</p>
+                            <a target="_blank" href="http://gather.ly">More info at Gather.ly</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="assets/img/min/p.gatherly.jpg" alt="Gather.ly">
+                        </figure>
+                    </article>
+                    <article class="project">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>SAS</h4>
+                                <p>Online Presentation</p>
+                            </header>
+                            <p>Design</p>
+                            <p>Online "Webinar" for Scandanavian Airlines. Each slide was themed appropriately in order for viewers to relate the information to a particular topic.</p>
+                            <a target="_blank" href="http://studiobrewer.com/?project=sas-webinar">View more information</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="assets/img/min/p.sas_presentation.jpg" alt="SAS Presentation">
+                        </figure>
+                    </article>
+                    <article class="project project--desc-right">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>Brewer’s Droop</h4>
+                                <p>Blog Website</p>
+                            </header>
+                            <p>Design &amp; Development</p>
+                            <p>Device-responsive online site for the popular advertising and marketing newsletter in South Africa, written by the humble father.</p>
+                            <a target="_blank" href="http://studiobrewer.com/?project=the-brewer-s-droop">View more information</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="assets/img/min/p.brewersdroop.jpg" alt="Brewers Droop">
+                        </figure>
+                    </article>
+
+                    <article class="project">
+                        <aside class="project-description">
+                            <header class="project-header">
+                                <h4>Cravendale Epic Straws</h4>
+                                <p>Website</p>
+                            </header>
+                            <p>Front-end Development</p>
+                            <p>A campaign delivering an experience for the promotional straw sets that Cravendale were offering in exchange for collecting codes, which were printed and sold on bottles across the UK.</p>
+                            <a target="_blank" href="http://www.epicstraws.co.uk">View more information</a>
+                        </aside>
+                        <figure class="project-image ri">
+                            <img src="assets/img/min/p.cravendale.jpg" alt="Cravendale Epic Straws">
                         </figure>
                     </article>
                 </section>
@@ -182,7 +292,7 @@
                             Art Direction &amp; Illustration <br>
                             <p>
                                 <a href="mailto:jake@studiobrewer.com">jake@studiobrewer.com</a> <br>
-                                <a href="studiobrewer.com" target="_blank">studiobrewer.com</a>
+                                <a href="http://studiobrewer.com" target="_blank">studiobrewer.com</a>
                             </p>
                         </p>
                         <aside class="social-links color-red">
@@ -201,7 +311,7 @@
                             Web Development <br>
                             <p>
                                 <a href="mailto:adam@brewerlogic.com">adam@brewerlogic.com</a> <br>
-                                <a href="brewerlogic.com" target="_blank">brewerlogic.com</a>
+                                <a href="http://brewerlogic.com" target="_blank">brewerlogic.com</a>
                             </p>
                         </p>
                         <aside class="social-links color-blue">
@@ -227,15 +337,6 @@
     </div>
 
     <script src="assets/js/main.min.js"></script>
-
-    <script>
-        // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        // ga('create', 'UA-47362471-1', 'getbrewer.com');
-        // ga('send', 'pageview');
-    </script>
 
 </body>
 </html>
