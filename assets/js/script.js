@@ -91,17 +91,43 @@
     konami(egg);
 
     function egg() {
-        $('.js-adam').attr('src', Site.basePath + 'assets/img/min/stimpy.jpg');
-        $('.js-jake').attr('src', Site.basePath + 'assets/img/min/ren.jpg');
 
-        var audio = document.createElement('audio');
-        audio.src = Site.basePath + "assets/audio/ren-stimpy.mp3";
-        document.body.appendChild(audio);
-        audio.play();
+        var eggs = [
+                {
+                    adam: Site.basePath + 'assets/img/min/stimpy.jpg',
+                    jake: Site.basePath + 'assets/img/min/ren.jpg',
+                    audio: Site.basePath + 'assets/audio/ren-stimpy.mp3'
+                },
+                {
+                    adam: Site.basePath + 'assets/img/min/cow.jpg',
+                    jake: Site.basePath + 'assets/img/min/chicken.jpg',
+                    audio: Site.basePath + 'assets/audio/cow-and-chicken.mp3'
+                },
+                {
+                    adam: Site.basePath + 'assets/img/min/weasel.jpg',
+                    jake: Site.basePath + 'assets/img/min/baboon.jpg',
+                    audio: Site.basePath + 'assets/audio/i-am-weasel.mp3'
+                }
+            ],
+            i = Math.floor(Math.random() * eggs.length);
+
+        $('.js-adam').attr('src', eggs[i].adam);
+        $('.js-jake').attr('src', eggs[i].jake);
+
+        if (!Site.audio) {
+            var audio = document.createElement('audio');
+            document.body.appendChild(audio);
+            audio.src = eggs[i].audio;
+            Site.audio = audio;
+        } else {
+            Site.audio.src = eggs[i].audio;
+        }
+        Site.audio.play();
 
         $(document).on('keyup', function (evt) {
             if (evt.keyCode === 27) {
-                if (audio) audio.parentNode.removeChild(audio);
+                if (Site.audio) Site.audio.pause();
+                // if (audio) audio.parentNode.removeChild(audio);
             }
         });
     }
