@@ -106,6 +106,6 @@
         });
     }
 
-    console.info('Hello developers!');
+    console.info('Hello developers! Full source available @ https://github.com/adamcbrewer/getbrewer.com');
 
 }(window, document, jQuery));
