@@ -68,7 +68,7 @@
     if (!Site.touch) {
         $('.js-affix').affix({
             offset: {
-                top: 400
+                top: 445
             }
         });
     }
@@ -79,7 +79,7 @@
      *
      */
     $('body').scrollspy({
-        offset: 67
+        // offset: 67
     });
 
 

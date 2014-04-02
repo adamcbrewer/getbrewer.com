@@ -20,9 +20,20 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .section--devices {
+        .profile-pictures.profile-pictures--small:before {
+            top: 6em;
+        }
+    }
+    .device {
+        @include transform(scale(0.8));
+    }
+}
+
 @media screen and (max-width: 770px) {
     .header-bg {
-        height: 410px;
+        height: 420px;
     }
     .profile-pictures {
         .profile-pic {
@@ -65,7 +76,7 @@
 
 @media screen and (max-width: 580px) {
     .header-bg {
-        height: 346px;
+        height: 386px;
     }
     .profile-pictures {
         .profile-pic {
@@ -89,7 +100,7 @@
 
 @media screen and (max-width: 410px) {
     .header-bg {
-        height: 336px;
+        height: 376px;
     }
     .profile-pictures {
         .profile-pic {

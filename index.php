@@ -44,8 +44,9 @@
 
         <nav class="nav js-affix">
             <a class="nav-home js-smoothscroll icon-home" href="#home"></a>
-            <a class="nav-item js-smoothscroll" href="#what-we-do">What We Do</a>
+            <a class="nav-item js-smoothscroll" href="#what-we-do">What</a>
             <a class="nav-item js-smoothscroll" href="#projects">Work</a>
+            <a class="nav-item js-smoothscroll" href="#who-we-are">Who</a>
             <a class="nav-item js-smoothscroll" href="#contact">Contact</a>
         </nav>
 
@@ -70,7 +71,7 @@
 
                 <h2 class="strapline contain">The design and development partnership of Jake and Adam Brewer. Brothers, in a digital world.</h2>
 
-                <a href="#what-we-do" class="js-smoothscroll section-arrow icon-down-open-big"></a>
+                <a href="#projects" class="js-smoothscroll section-arrow icon-down-open-big"></a>
 
             </header>
 
@@ -80,51 +81,33 @@
                         <h3 class="title">What We Do</h3>
                         <i class="dots"></i>
                     </header>
-                    <p class="contain contain--large text-left">
-                        We make websites&hellip; with a little extra. <br><br>
-                        Apart, Jake and Adam work on a freelance basis for
-                        advertising and digital agencies — including individual
-                        clients — in and around London. <br>
+                    <p class="contain contain--large text-larger">
+                        We create meaningful online experiences which communicate valuable ideas, products and services. <br>
                         <br>
-                        Together, they combine their complementary skills, extensive experience and
-                        brotherly affection in a complete package, offering clients
-                        a high-quality online presence, from desktop to mobile. <br>
+                        These can take the shape of anything from a website or an online presentation, to a data-driven, web-based application — all of which are highly accessible across today’s smorgasbord of digital devices.
                     </p>
                 </article>
             </article>
 
-            <section id="profiles" class="section section--earth section--profiles">
+            <section id="devices" class="section section--earth section--devices">
                 <div class="cols profile-pictures profile-pictures--small">
-                    <div class="col-1-2">
-                        <header>
-                            <figure class="ri profile-pic">
-                                <img class="js-jake" src="assets/img/min/jake.jpg" alt="Jake">
-                            </figure>
-                            <h4 class="color-red profile-title">Jake</h4>
-                        </header>
-                        <p class="contain text-left">
-                            The Graphic &amp; Digital Designer,
-                            Art Director and Illustrator with over nine years of experience across a wide range of creative fields, digital media and
-                            client industries. <br>
-                            <br>
-                            View Jake’s work at <br>
-                            <a href="http://studiobrewer.com" target="_blank">studiobrewer.com</a>
-                        </p>
+                    <div class="col-1-3">
+                        <figure class="device device--tablet">
+                            <div class="device-bg-tablet"></div>
+                        </figure>
+                        <h3 class="device-title device-title--tablet">Tablets</h3>
                     </div>
-                    <div class="col-1-2">
-                        <header>
-                            <figure class="ri profile-pic">
-                                <img class="js-adam" src="assets/img/min/adam.jpg" alt="Adam">
-                            </figure>
-                            <h4 class="color-blue profile-title">Adam</h4>
-                        </header>
-                        <p class="contain text-left">
-                            The Web Developer who builds semantic, mobile-responsive websites and
-                            apps optimised for both speed and performance, while complying with modern web standards and features. <br>
-                            <br>
-                            View Adam’s work at <br>
-                            <a href="http://brewerlogic.com" target="_blank">brewerlogic.com</a>
-                        </p>
+                    <div class="col-1-3">
+                        <figure class="device device--desktop">
+                            <div class="device-bg-desktop"></div>
+                        </figure>
+                        <h3 class="device-title">Desktops</h3>
+                    </div>
+                    <div class="col-1-3">
+                        <figure class="device device--mobile">
+                            <div class="device-bg-mobile"></div>
+                        </figure>
+                        <h3 class="device-title device-title--mobile">Mobiles</h3>
                     </div>
                 </div>
             </section>
@@ -134,7 +117,7 @@
                     <h3 class="title">Work</h3>
                     <i class="dots"></i>
                 </header>
-                <p class="contain contain--large text-left">
+                <p class="contain contain--large text-larger">
                     Below is a small sample of our past projects
                     &mdash; a mixture of work either created together or individually for clients, agencies and studios.
                 </p>
@@ -271,12 +254,66 @@
 
             </article>
 
-            <section id="contact" class="section section--earth section--contact">
+            <article id="who-we-are" class="section section--earth section--whoweare">
+                <article>
+                    <header>
+                        <h3 class="title">Who We Are</h3>
+                        <i class="dots"></i>
+                    </header>
+                    <p class="contain contain--large text-larger">
+                        Apart, Jake and Adam work on a freelance basis for
+                        advertising, digital and creative agencies &mdash; including individual
+                        clients &mdash; in and around London. <br>
+                        <br>
+                        Together, they combine their complementary skills, extensive experience and
+                        brotherly affection in a complete package, offering clients
+                        a high-quality online presence on any device.<br>
+                    </p>
+                </article>
+            </article>
+
+            <section id="profiles" class="section section--earth section--profiles">
+                <div class="cols profile-pictures profile-pictures--small">
+                    <div class="col-1-2">
+                        <header>
+                            <figure class="ri profile-pic">
+                                <img class="js-jake" src="assets/img/min/jake.jpg" alt="Jake">
+                            </figure>
+                            <h4 class="color-red profile-title">Jake</h4>
+                        </header>
+                        <p class="contain text-left">
+                            The Graphic &amp; Digital Designer,
+                            Art Director and Illustrator with over nine years of experience across a wide range of creative fields, digital media and
+                            client industries. <br>
+                            <br>
+                            View Jake’s work at <br>
+                            <a href="http://studiobrewer.com" target="_blank">studiobrewer.com</a>
+                        </p>
+                    </div>
+                    <div class="col-1-2">
+                        <header>
+                            <figure class="ri profile-pic">
+                                <img class="js-adam" src="assets/img/min/adam.jpg" alt="Adam">
+                            </figure>
+                            <h4 class="color-blue profile-title">Adam</h4>
+                        </header>
+                        <p class="contain text-left">
+                            The Web Developer who builds semantic, mobile-responsive websites and
+                            apps optimised for both speed and performance, while complying with modern web standards and features. <br>
+                            <br>
+                            View Adam’s work at <br>
+                            <a href="http://brewerlogic.com" target="_blank">brewerlogic.com</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section section--grey section--contact">
                 <header>
                     <h3 class="title">Contact</h3>
                     <i class="dots"></i>
                 </header>
-                <p class="contain contain--large text-left">
+                <p class="contain contain--large text-left text-larger">
                     If you are interested in working together, or even just have something you think we might be able to help with, please do get in touch, with either of us. <br>
                     <br>
                     If you require only design or web development, that’s OK too. Don’t worry, the other won’t be offended. <br>
