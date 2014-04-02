@@ -313,10 +313,8 @@
                     <h3 class="title">Contact</h3>
                     <i class="dots"></i>
                 </header>
-                <p class="contain contain--large text-left text-larger">
-                    If you are interested in working together, or even just have something you think we might be able to help with, please do get in touch, with either of us. <br>
-                    <br>
-                    If you require only design or web development, that’s OK too. Don’t worry, the other won’t be offended. <br>
+                <p class="contain contain--large text-larger">
+                    If you are interested in working with us, please get in touch with either of us to discuss your needs. Don’t worry, the other won’t be offended.
                 </p>
                 <div class="separator"></div><br>
                 <div class="cols text-left">

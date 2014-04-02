@@ -78,9 +78,9 @@
      * Current nav state when scrolling
      *
      */
-    $('body').scrollspy({
-        // offset: 67
-    });
+    // $('body').scrollspy({
+    //     offset: 67
+    // });
 
 
     /**

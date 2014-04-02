@@ -17,7 +17,9 @@
         background: linear-gradient(to right, #c42f07 0%,#c42f07 28%,#286ac8 72%,#286ac8 100%);
     }
 }
-
+.content {
+    overflow: hidden;
+}
 .header-bg {
     position: absolute;
     z-indeX: -1;
@@ -62,7 +64,7 @@
     width: 100%;
     text-align: right;
     margin: 0em auto 0;
-    padding: 19px 2% 14px;
+    padding: 15px 2% 10px;
     text-transform: uppercase;
     border-bottom: 1px solid fade-out($c-lightgrey, 0.7);
     // font-weight: bold;
@@ -75,8 +77,10 @@
 
     &.affix {
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.1);
+        border-bottom: none;
+        background-color: transparent; //rgba(0, 0, 0, 0.1);
         .nav-item {
+            display: none;
             color: $c-text;
             &:hover,
             &.active {
@@ -119,10 +123,10 @@
             top: 5.5em;
             left: 0;
             right: 0;
-            width: 100%;
+            width: 120%;
             z-index: 1;
             height: 1px;
-            background-color: $c-lightgrey;
+            background-color: darken($c-lightgrey, 10%);
             opacity: 0.5;
         }
 
