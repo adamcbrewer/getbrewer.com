@@ -71,7 +71,7 @@
 
                 <h2 class="strapline contain">The design and development partnership of Jake and Adam Brewer. Brothers, in a digital world.</h2>
 
-                <a href="#projects" class="js-smoothscroll section-arrow icon-down-open-big"></a>
+                <a href="#what-we-do" class="js-smoothscroll section-arrow icon-down-open-big"></a>
 
             </header>
 
